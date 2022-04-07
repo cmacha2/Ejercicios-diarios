@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+     
+    function parImpar() { 
+        /// Dos respuestas las dos sirven pero no fuimos por la mas optimizada
+
+   /* 
+        let a = prompt('Ingrese un numero: ');
+        if(isNaN(a) === true || a === null || a === ''){
+            parImpar();
+        }
+        else{
+            let num = parseInt(a)
+            console.log(num)
+            if(num % 2 === 0) {
+                alert(`${num} es un numero PAR`);
+            }
+            else {
+                alert(`${num} es un numero PAR`);
+            } 
+        } */
+
+        let a = prompt('Ingrese un numero: ');
+        return (isNaN(a) === true || a === null || a === '') ? parImpar() 
+        : parseInt(a) % 2 === 0 ? alert(`${a} es un numero PAR`)
+        : parseInt(a) % 2 !== 0 ? alert(`${a} es un numero IMPAR`)
+        : console.log(`El valor ${a} insertado se desconoce su tipo`)
+    }
+    console.log(parImpar());
+
+    </script>
+</body>
+</html>
+

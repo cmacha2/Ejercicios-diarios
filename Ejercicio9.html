@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <script>
+        function calcular(){
+
+        let a = prompt('Ingrese su primer numero: ');
+        while(isNaN(a) === true || a === null || a === ''){
+            a = prompt('Ingrese su primer numero: ');
+        }
+        let b = prompt('Ingrese su segundo numero: ');
+        while(isNaN(b) === true || b === null || b === ''){
+            b = prompt('Ingrese su segundo numero: ');
+        }
+     
+        function sumar(a,b){
+            return parseInt(a) + parseInt(b)
+        }
+        function restar(a,b){
+            return parseInt(a) - parseInt(b)
+        }
+        function multiplicar(a,b){
+            return parseInt(a) * parseInt(b)
+        }
+        function dividir(a,b){
+            if(parseInt(b)===0)return 'Indefinido'
+            else{return parseInt(a) / parseInt(b)}
+        }
+        
+        //Escribiendo en el cuerpo de la pagina 
+        document.write(`<h1>La suma de ${a} + ${b} es igual a ${sumar(a,b)}</h1> </br> <h1>La resta de ${a} - ${b} es igual a ${restar(a,b)}</h1> </br> <h1>La multiplicacion de ${a} * ${b} es igual a ${multiplicar(a,b)}</h1> </br> <h1>La division de ${a} / ${b} es igual a ${dividir(a,b)}</h1>`);
+        alert(`La suma de ${a} + ${b} es igual a ${sumar(a,b)} \nLa resta de ${a} - ${b} es igual a ${restar(a,b)} \nLa multiplicacion de ${a} * ${b} es igual a ${multiplicar(a,b)} \nLa division de ${a} / ${b} es igual a ${dividir(a,b)}`)
+        console.log(`La suma de ${a} + ${b} es igual a ${sumar(a,b)} \nLa resta de ${a} - ${b} es igual a ${restar(a,b)} \nLa multiplicacion de ${a} * ${b} es igual a ${multiplicar(a,b)} \nLa division de ${a} / ${b} es igual a ${dividir(a,b)}`);
+        
+    }
+    console.log(calcular())
+
+    </script>
+</body>
+</html>
+

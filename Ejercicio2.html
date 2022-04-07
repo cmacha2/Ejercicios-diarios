@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const whatIs = () => {
+
+            let x = prompt("Primer número: ");
+            let y = prompt("Segundo número: ");
+            
+            return isNaN(Number(x)) ||  isNaN(Number(y)) || x<= 0 || y<= 0 ? whatIs()
+            : x === y ? console.log(`${x} es igual a ${y}`) 
+            : x > y ? console.log(`${x} es mayor a ${y}`) 
+            : console.log(`${y} es mayor a ${x}`) 
+             
+        }
+
+        whatIs();
+
+    </script>
+</body>
+</html>
+

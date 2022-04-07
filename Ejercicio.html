@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <script>
+    /// EJERCICIO 10 Resuelto completado
+    function ordenarLista() {
+    let a = [];
+    for (let i = 0; i < 6; i++) {
+        let c = (prompt('Ingrese un numero: '));
+        while (isNaN(c) || c === '' || c === null) {
+            c = prompt('Ingrese un numero: ');
+            i - 1;
+        }
+        a[i] = c;
+    }
+    console.log(`Los numeros que introduciste son ${a}\nY quedan asi ordenados ${a.sort((a,b)=>{return a-b})}\nY asi queda invertido ${a.sort((a,b)=>{return a-b}).reverse()}\nEl array tiene ${a.length} elementos.`);
+    document.write(`Los numeros que introduciste son ${a}<br>Y quedan asi ordenados ${a.sort((a,b)=>{return a-b})}<br>Y asi queda invertido ${a.sort((a,b)=>{return a-b}).reverse()}<br>El array tiene ${a.length} elementos`);
+}
+console.log(ordenarLista());
+
+    </script>
+</body>
+</html>
+

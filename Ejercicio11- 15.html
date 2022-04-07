@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <script>
+    /// EJERCICIO 10 Resuelto completado
+    function pushear(){
+        let array = [];
+        let number;
+        for(i=0;i<6;i++)array.push(number = parseInt(prompt('Ingresa el numero')));
+
+        // Ejercicio 11 y 12 resueltos juntos Mostrar elementos en la pagina y consola de forma ordenada
+        console.log(`${array.sort()}`);
+        document.write(`${array.sort((a,b)=>b-a)}`);
+
+        //Ejercicio 13 resuelto 
+        console.log(`${array.reverse()}`)
+        document.write(`${array.reverse()}`)
+
+        //Ejercicio 14 resuelto mostrar cuantos elementos tiene el array
+        console.log(array.length)
+
+        // Ejercicio 15 - Buscar un elemento en un array
+        function busqueda(array){
+        let busqueda = prompt('Introducir el elemento a buscar');
+        let coincide;
+        console.log(coincide = array.filter(valor => valor == busqueda) && busqueda !== undefined ? `El elemento que coince es ${coincide}` : `Ningun elemento coincide`)
+        }
+
+    }
+    console.log(pushear())
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    
+
+    <script>
+        // 3- Utilizando un bucle, mostrar la suma y la media de los numeros introducidos hasta introducir un numero negativo y ahi mostrar el resultado 
+
+   const whatIs = () => {
+        
+        var array = [];
+        while(true){
+        let x = parseInt(prompt("Introducir un numero, que usted desee: "));
+        if(x > 0)array.push(x);
+        else if(x < 0)break;
+        }
+            alert(`La suma total es de ${array.reduce((a, b) => a + b, 0)} y la media es de ${array.reduce((a, b) => a + b, 0) /array.length}`)
+    }
+    whatIs();  
+
+
+    </script>
+</body>
+</html>
+
