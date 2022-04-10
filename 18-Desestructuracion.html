@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desestructuracion</title>
+
+    
+    <script type="text/javascript">
+
+
+
+    /////Sin destructuracion 
+    const numeros = [1,2,3];
+
+    let uno = numeros[0];
+    let dos = numeros[1];
+    let tres = numeros[2];
+
+    console.log(uno,dos,tres);
+
+
+    /////Con destructuracion
+    const [one,two,three] = numeros;
+    console.log(one,two,three);
+
+
+    const persona = {
+        nombre: 'Juan',
+        edad: 20,
+        direccion: {
+            calle: 'Calle falsa',
+            numero: 123
+        }
+    }
+
+    let {nombre,edad,direccion:{calle,numero}} = persona;
+
+
+    console.log(nombre,edad,calle,numero);
+
+
+
+
+
+
+
+
+    </script>
+</html>
+

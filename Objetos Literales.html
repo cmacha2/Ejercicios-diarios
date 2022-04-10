@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Objetos literales</title>
+
+    
+    <script type="text/javascript">
+
+        let nombre = 'Firulais';
+        edad = 7;
+
+        const perro = {
+            nombre:nombre,
+            edad:edad,
+            ladrar:function(){
+                console.log('Guau');
+            }
+        }
+        console.log(perro);
+        perro.ladrar();
+
+        const dog = {
+            nombre, 
+            edad : edad,
+        } 
+        console.log(dog);
+        console.log(nombre); // nombre es una variable global y no una propiedad del objeto
+        console.log(edad) ; // edad es una variable global y no una propiedad del objeto
+
+    </script>
+</html>
+
